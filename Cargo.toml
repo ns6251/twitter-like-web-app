@@ -1,0 +1,23 @@
+[package]
+name = "rustwi"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+askama = "0.11.1"
+axum = "0.5.5"
+bb8 = "0.8.0"
+bb8-postgres = "0.8.0"
+chrono = { version = "0.4.19", features = ["serde"] }
+dotenv = "0.15.0"
+http = "0.2.7"
+serde = { version = "1.0.137", features = ["derive"] }
+tokio = { version = "1.18.2", features = ["full"] }
+tokio-postgres = { version = "0.7.6", features = ["with-chrono-0_4"] }
+tracing = "0.1.34"
+tracing-subscriber = { version = "0.3.11", features = ["env-filter"] }
+
+[dev-dependencies]
+mockall = "0.11.1"
